@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-16T15:11:15.171972" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="C:\Users\Meenakshi\PycharmProjects\RobotFramework">
+<suite id="s1-s1" name="Tests" source="C:\Users\Meenakshi\PycharmProjects\RobotFramework\tests">
+<suite id="s1-s1-s1" name="testDemo1" source="C:\Users\Meenakshi\PycharmProjects\RobotFramework\tests\testDemo1.robot">
+<test id="s1-s1-s1-t1" name="Validate UnSuccessful Login" line="7">
+<kw name="Create Chrome Driver">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-05-16T15:11:16.534765" level="FAIL">Evaluating expression 'create_chrome_driver()' failed: ModuleNotFoundError: No module named '.venv/Scripts/webdriver_manager_setup'</msg>
+<var>${DRIVER}</var>
+<arg>create_chrome_driver()</arg>
+<arg>modules=.venv/Scripts/webdriver_manager_setup.py</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2024-05-16T15:11:16.534765" elapsed="0.000000">Evaluating expression 'create_chrome_driver()' failed: ModuleNotFoundError: No module named '.venv/Scripts/webdriver_manager_setup'</status>
+</kw>
+<status status="FAIL" start="2024-05-16T15:11:16.534765" elapsed="0.000000">Evaluating expression 'create_chrome_driver()' failed: ModuleNotFoundError: No module named '.venv/Scripts/webdriver_manager_setup'</status>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>browser=${DRIVER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2024-05-16T15:11:16.534765" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-16T15:11:16.534765" elapsed="0.000000">Evaluating expression 'create_chrome_driver()' failed: ModuleNotFoundError: No module named '.venv/Scripts/webdriver_manager_setup'</status>
+</test>
+<doc>To validate the login form</doc>
+<status status="FAIL" start="2024-05-16T15:11:15.328638" elapsed="1.206127"/>
+</suite>
+<status status="FAIL" start="2024-05-16T15:11:15.312846" elapsed="1.221919"/>
+</suite>
+<status status="FAIL" start="2024-05-16T15:11:15.187599" elapsed="1.362805"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">RobotFramework.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="testDemo1">RobotFramework.Tests.testDemo1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-16T15:11:16.534765" level="ERROR">Error in file 'C:\Users\Meenakshi\PycharmProjects\RobotFramework\tests\testDemo1.robot' on line 4: Importing library 'C:\Users\Meenakshi\PycharmProjects\RobotFramework\.venv\Scripts\webdriver_manager_setup.py' failed: ModuleNotFoundError: No module named 'webdriver_manager'
+Traceback (most recent call last):
+  File "C:\Users\Meenakshi\PycharmProjects\RobotFramework\.venv\Scripts\webdriver_manager_setup.py", line 2, in &lt;module&gt;
+    from webdriver_manager.chrome import ChromeDriverManager
+PYTHONPATH:
+  C:\Users\Meenakshi\PycharmProjects\RobotFramework\.venv\Scripts
+  
+  C:\Users\Meenakshi\AppData\Local\Programs\PyCharm Community\plugins\python-ce\helpers\pydev
+  C:\Users\Meenakshi\AppData\Local\Programs\PyCharm Community\plugins\python-ce\helpers\third_party\thriftpy
+  C:\Users\Meenakshi\AppData\Local\Programs\PyCharm Community\plugins\python-ce\helpers\pydev
+  C:\Users\Meenakshi\PycharmProjects\RobotFramework
+  C:\Users\Meenakshi\AppData\Local\JetBrains\PyCharmCE2024.1\cythonExtensions
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\python312.zip
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\DLLs
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0
+  C:\Users\Meenakshi\PycharmProjects\RobotFramework\.venv
+  C:\Users\Meenakshi\PycharmProjects\RobotFramework\.venv\Lib\site-packages</msg>
+</errors>
+</robot>
